@@ -434,10 +434,11 @@ div.herocont p {
 }
 
 #form-div {
-  background-color: rgba(72, 72, 72, 0.4);
+  background-color: rgba(72, 72, 72, 0.2);
   padding: 35px 35px 50px 35px;
-  width: 35%;
-  margin-top: 30px;
+  width: 90%;
+  max-width: 600px;
+  margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   -moz-border-radius: 7px;
@@ -445,7 +446,7 @@ div.herocont p {
 }
 
 .feedback-input {
-  color: #3c3c3c;
+  color: #757575;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -455,6 +456,8 @@ div.herocont p {
   padding: 13px 13px 13px 54px;
   margin-bottom: 10px;
   width: 100%;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -465,7 +468,7 @@ div.herocont p {
 .feedback-input:focus {
   background: #fff;
   box-shadow: 0;
-  border: 3px solid #3498db;
+  border: 3px solid #e7d29c;
   color: #3498db;
   outline: none;
   padding: 13px 13px 13px 54px;
@@ -509,14 +512,14 @@ input:focus, textarea:focus {
   background-color: white;
 }
 
-#button-blue {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+#button {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
   float: left;
   width: 100%;
   border: #fbfbfb solid 4px;
   cursor: pointer;
-  background-color: #3498db;
-  color: white;
+  background-color: #e7d29c;
+  color: #757575;
   font-size: 24px;
   padding-top: 22px;
   padding-bottom: 22px;
@@ -524,12 +527,11 @@ input:focus, textarea:focus {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   margin-top: -4px;
-  font-weight: 700;
 }
 
-#button-blue:hover {
+#button:hover {
   background-color: rgba(0, 0, 0, 0);
-  color: #0493bd;
+  color: #B89F5E;
 }
 
 .submit:hover {
