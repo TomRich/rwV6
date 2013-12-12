@@ -114,11 +114,15 @@ a {
 #work {
 	background-color: $offwhite;
 }
-#contact {
-	background-color: $pinkred;
+div#contact {
 	text-align: center;
+	background: url(../../img/contactBG.jpg) no-repeat center center;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-#header,#work,#contact {
+#header,#work,div#contact {
 	position: relative;
 }
 div.icon {
@@ -185,7 +189,7 @@ transition: all 0.5s ease-in-out;
 		font-weight: 400;
 		line-height: 80px;
 		margin-bottom: 0;
-		border-bottom: 3px solid $pinkred;
+		border-bottom: 2px solid #f38a69;
 		width: 85%;
 		max-width: 290px;
 }

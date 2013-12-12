@@ -3,11 +3,12 @@
 <head>
 	<title>RichWhizz</title>
 	<link rel="stylesheet" href="assets/css/screen.css">
+	<link rel="stylesheet" href="assets/css/animate-custom.css">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable: no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<!--Scripts before load-->
 	<script src="http://modernizr.com/downloads/modernizr-2.5.3.js"></script>
 </head>
@@ -20,7 +21,7 @@
 		</ul>
 	</nav>
 	<section id="header">
-			<div class="herocont">
+			<div class="herocont animated fadeInUp">
 			<span class="glasses"></span>
 			<h1>Tom Richardson</h1>
 			<p>Hey there, thanks for visiting! This is just a simple site to let you know what I do, and where I do it. You can also contact me with the form below should you need to get in touch.</p>
@@ -34,7 +35,7 @@
 				<a href="#contact"><i class="fa fa-chevron-circle-down" id="arrow"></i></a>
 			</div>
 	</section>
-	<section id="contact">
+	<div id="contact" data-stellar-background-ratio="0.7">
 		<div id="form-main">
   			<div id="form-div">
     		<form class="form" id="form1">
@@ -54,10 +55,7 @@
     		</form>
     		</div>
   		</div>
-		<div class="hide-mobile icon">
-			<a href="#header"><i class="fa fa-chevron-circle-up" id="arrow"></i></a>
-		</div>
-	</section>
+	</div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script type="text/javascript">
 		if (typeof jQuery == 'undefined') {
@@ -66,5 +64,11 @@
 	</script>
 	<script src="assets/js/hashgrid.js"></script>
 	<script src="assets/js/script.js"></script>
+	<script src="assets/js/stellar-min.js"></script>
+	<script>
+ 		$.stellar({
+ 			verticalOffset: -802
+ 		});
+	</script>
 </body>
 </html>
